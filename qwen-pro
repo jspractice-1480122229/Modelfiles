@@ -1,0 +1,14 @@
+FROM qwen2.5-coder:7b
+
+# Give it 32k context so it can read your whole project
+PARAMETER num_ctx 32768
+
+# Stop sequences to prevent the AI from talking to itself
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+
+# The "Secret Sauce" System Prompt
+SYSTEM """
+You are OpenCode's primary agent. Use the provided tools (bash, edit, skill) to solve tasks. 
+Always prioritize accuracy over speed. If you are unsure, use the 'bash' tool to check the environment.
+"""

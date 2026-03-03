@@ -1,0 +1,12 @@
+FROM deepseek-r1:70b
+
+# CPU is slow, so don't go too crazy, but 16k is a solid minimum
+PARAMETER num_ctx 16384
+
+# Temperature setting for more stable reasoning
+PARAMETER temperature 0.6
+
+SYSTEM """
+You are the logic-checker. Review the proposed code or architecture and look for edge cases. 
+Be critical and seasoned in your feedback.
+"""
