@@ -7,7 +7,7 @@
 
 # MODELFILES
 
-<em>Precision validation for secure, reliable code</em>
+<em>Engineer smarter, secure code</em>
 
 <!-- BADGES -->
 <!-- local repository, no metadata badges. -->
@@ -49,9 +49,7 @@
 
 |      | Component       | Details                              |
 | :--- | :-------------- | :----------------------------------- |
-| ⚙️  | **Architecture**  | <ul><li>Modular monorepo structure with multiple model-specific submodules</li><li>Shared utility libraries for common operations</li><li>Decentralized CI/CD pipelines for each model variant</li> |
-| 🔩 | **Code Quality**  | <ul><li>No linter/config enforcement detected</li><li>Limited type annotations across core modules</li><li>Code duplication observed in model-specific utilities</li> |
-| 📄 | **Documentation** | <ul><li>Minimal inline comments in source code</li><li>No API reference or user guides found</li><li>README.md contains only basic project overview</li> |
+| ⚙️  | **Architecture**  | <ul><li>Architecture not explicitly defined in the provided context</li></ul> |
 
 ---
 
@@ -62,7 +60,9 @@
     ├── Modelfile.deepseek-coder_autocomplete
     ├── Modelfile.qwen-pro-Bob
     ├── Modelfile.qwen3-30b-Maria
-    └── Modelfile.r1-logic-Deepak
+    ├── Modelfile.r1-logic-Deepak
+    ├── README.md
+    └── readme-ai.md
 ```
 
 ### 🟢 Project Index
@@ -84,19 +84,19 @@
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/home/rex/Modelfiles/blob/master/Modelfile.r1-logic-Deepak'>Modelfile.r1-logic-Deepak</a></b></td>
-					<td style='padding: 8px;'>- Configures the Deepak logic checker to enforce thoroughness, security, and edge case handling<br>- Integrates with the architecture to validate code reviews against critical priorities, ensuring robustness and mitigating risks through structured feedback and systemic checks.</td>
+					<td style='padding: 8px;'>- Configures the deepseek-r1 model for architecture reviews, enforcing rigorous checks for edge cases, security risks, and logical flaws<br>- Integrates with the codebases logic-validation layer to ensure compliance with security and design principles across all components.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/home/rex/Modelfiles/blob/master/Modelfile.qwen3-30b-Maria'>Modelfile.qwen3-30b-Maria</a></b></td>
-					<td style='padding: 8px;'>- Configures the Qwen3-30b model with strict verification parameters and defines Maria as the Checker role<br>- Establishes literal accuracy, spec adherence, and correctness as core priorities for code validation within the architecture.</td>
+					<td style='padding: 8px;'>- Configures model parameters and enforces strict spec adherence for inference tasks<br>- Defines Marias role as a precision-focused verification engine, ensuring code changes align with explicit requirements and avoid speculative deviations<br>- Shapes the architectures validation pipeline.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/home/rex/Modelfiles/blob/master/Modelfile.qwen-pro-Bob'>Modelfile.qwen-pro-Bob</a></b></td>
-					<td style='padding: 8px;'>- Configures the models behavior and defines Bobs role as an expert engineer<br>- It ensures correct, minimal changes while maintaining code quality and alignment with project priorities.</td>
+					<td style='padding: 8px;'>- Configures the models operational parameters and defines Bob the Builders role as an expert engineer agent<br>- Sets priorities for correctness, minimal changes, and code quality while preserving existing project conventions and APIs<br>- Shapes the model's behavior for efficient, accurate code generation.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/home/rex/Modelfiles/blob/master/Modelfile.deepseek-coder_autocomplete'>Modelfile.deepseek-coder_autocomplete</a></b></td>
-					<td style='padding: 8px;'>- Configures the model for autocomplete tasks, guiding it to generate relevant tokens without additional context<br>- Sets parameters to balance creativity and precision, ensuring focused, context-aware predictions within the systems constraints<br>- Shapes the models behavior for efficient, targeted completion of code or text fragments.</td>
+					<td style='padding: 8px;'>- Configures the model for efficient autocomplete, ensuring concise, context-aware suggestions<br>- Defines parameters to balance creativity and precision, aligning with the codebases goal of streamlined, focused token prediction without extraneous explanations or block completions.</td>
 				</tr>
 			</table>
 		</blockquote>
