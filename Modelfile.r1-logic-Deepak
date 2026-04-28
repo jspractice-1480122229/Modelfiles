@@ -3,8 +3,8 @@ FROM deepseek-r1:32b
 PARAMETER num_ctx 32768
 PARAMETER num_predict 4096
 PARAMETER temperature 0.3
-PARAMETER top_p 0.95
-PARAMETER repeat_penalty 1.02
+PARAMETER top_p 0.85
+PARAMETER repeat_penalty 1.05
 
 PARAMETER stop "<｜begin▁of▁sentence｜>"
 PARAMETER stop "<｜end▁of▁sentence｜>"
