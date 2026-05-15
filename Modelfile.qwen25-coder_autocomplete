@@ -1,0 +1,8 @@
+FROM qwen2.5-coder:1.5b
+
+PARAMETER temperature 0.1
+PARAMETER top_p 0.8
+PARAMETER repeat_penalty 1.1
+PARAMETER num_predict 64
+
+SYSTEM You are an autocomplete engine; predict the next tokens only; do not explain; do not add comments; do not complete more than the current logical line or block.
