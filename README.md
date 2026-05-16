@@ -1,192 +1,27 @@
-<div id="top">
+# Modelfiles
 
-<!-- HEADER STYLE: CLASSIC -->
-<div align="center">
+Ollama Modelfiles for a local multi-role agent team.
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
+## Models
 
-# MODELFILES
+| File | Base model | Role |
+|------|-----------|------|
+| `Modelfile.deepseek-coder_autocomplete` | `deepseek-coder:1.3b` | Inline autocomplete — predict next tokens only |
+| `Modelfile.qwen25-coder_autocomplete` | `qwen2.5-coder:1.5b` | Inline autocomplete (A/B vs deepseek-coder:1.3b) |
+| `Modelfile.qwen-pro-Bob` | `qwen3:8b` | Builder — generates correct, minimal-diff code |
+| `Modelfile.qwen3-30b-Maria` | `qwen3-coder:30b` | Checker — strict spec/correctness reviewer |
+| `Modelfile.r1-logic-Deepak` | `deepseek-r1:32b` | Architect — logic gaps, edge cases, security |
 
-<em>Engineer smarter, secure code</em>
-
-<!-- BADGES -->
-<!-- local repository, no metadata badges. -->
-
-<em>Built with the tools and technologies:</em>
-
-
-</div>
-<br>
-
----
-
-## 🌈 Table of Contents
-
-- [🌈 Table of Contents](#-table-of-contents)
-- [🔴 Overview](#-overview)
-- [🟠 Features](#-features)
-- [🟡 Project Structure](#-project-structure)
-    - [🟢 Project Index](#-project-index)
-- [🔵 Getting Started](#-getting-started)
-    - [🟣 Prerequisites](#-prerequisites)
-    - [⚫ Installation](#-installation)
-    - [⚪ Usage](#-usage)
-    - [🟤 Testing](#-testing)
-- [🌟 Roadmap](#-roadmap)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
-- [✨ Acknowledgments](#-acknowledgments)
-
----
-
-## 🔴 Overview
-
-
-
----
-
-## 🟡 Project Structure
+## Usage
 
 ```sh
-└── Modelfiles/
-    ├── Modelfile.deepseek-coder_autocomplete
-    ├── Modelfile.qwen-pro-Bob
-    ├── Modelfile.qwen3-30b-Maria
-    ├── Modelfile.r1-logic-Deepak
-    ├── README.md
-    └── UNLICENSE.txt
+ollama create autocomplete    -f Modelfile.deepseek-coder_autocomplete
+ollama create autocomplete-q  -f Modelfile.qwen25-coder_autocomplete
+ollama create Bob          -f Modelfile.qwen-pro-Bob
+ollama create Maria        -f Modelfile.qwen3-30b-Maria
+ollama create Deepak       -f Modelfile.r1-logic-Deepak
 ```
 
-### 🟢 Project Index
+## License
 
-<details open>
-	<summary><b><code>MODELFILES/</code></b></summary>
-	<!-- __root__ Submodule -->
-	<details>
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<div class='directory-path' style='padding: 8px 0; color: #666;'>
-				<code><b>⦿ __root__</b></code>
-			<table style='width: 100%; border-collapse: collapse;'>
-			<thead>
-				<tr style='background-color: #f8f9fa;'>
-					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-					<th style='text-align: left; padding: 8px;'>Summary</th>
-				</tr>
-			</thead>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/jspractice-1480122229/Modelfiles/blob/trunk/Modelfile.r1-logic-Deepak'>Modelfile.r1-logic-Deepak</a></b></td>
-					<td style='padding: 8px;'>- Configures the deepseek-r1 model for architecture reviews, enforcing rigorous checks for edge cases, security risks, and logical flaws<br>- Integrates with the codebases logic-validation layer to ensure compliance with security and design principles across all components.</td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/jspractice-1480122229/Modelfiles/blob/trunk/Modelfile.qwen3-30b-Maria'>Modelfile.qwen3-30b-Maria</a></b></td>
-					<td style='padding: 8px;'>- Configures model parameters and enforces strict spec adherence for inference tasks<br>- Defines Marias role as a precision-focused verification engine, ensuring code changes align with explicit requirements and avoid speculative deviations<br>- Shapes the architectures validation pipeline.</td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/jspractice-1480122229/Modelfiles/blob/trunk/Modelfile.qwen-pro-Bob'>Modelfile.qwen-pro-Bob</a></b></td>
-					<td style='padding: 8px;'>- Configures the models operational parameters and defines Bob the Builders role as an expert engineer agent<br>- Sets priorities for correctness, minimal changes, and code quality while preserving existing project conventions and APIs<br>- Shapes the model's behavior for efficient, accurate code generation.</td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/jspractice-1480122229/Modelfiles/blob/trunk/Modelfile.deepseek-coder_autocomplete'
-					>Modelfile.deepseek-coder_autocomplete</a></b></td>
-					<td style='padding: 8px;'>- Configures the model for efficient autocomplete, ensuring concise, context-aware suggestions<br>- Defines parameters to balance creativity and precision, aligning with the codebases goal of streamlined, focused token prediction without extraneous explanations or block completions.</td>
-				</tr>
-			</table>
-		</blockquote>
-	</details>
-</details>
-
----
-
-## 🔵 Getting Started
-
-### 🟣 Prerequisites
-
-This project requires the following dependencies:
-
-- **Programming Language:** unknown
-
-### ⚫ Installation
-
-Build Modelfiles from the source and intsall dependencies:
-
-1. **Clone the repository:**
-
-    ```sh
-    ❯ git clone https://github.com/jspractice-1480122229/Modelfiles.git
-    ```
-
-2. **Navigate to the project directory:**
-
-    ```sh
-    ❯ cd Modelfiles
-    ```
-
-### ⚪ Usage
-
-Run the project with:
-
-echo 'INSERT-RUN-COMMAND-HERE'
-
----
-
-## 🌟 Roadmap
-
-Incremental improvements are the best way to plan for this project and make sure you're delivering what is expected from your users in each phase of development (MVP/MPP).  Please see below as per current roadmap:
-- [X] <strike>> Implementing the Models </strike>
-- [ ] *TBD*
-
----
-
-## 🤝 Contributing
-
-Contributions are what make open source projects such as Modelfiles possible, they go hand in hand with the community's help to achieve common goals
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your LOCAL account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-    ❯ git clone https://github.com/jspractice-1480122229/Modelfiles.git
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-    ❯ git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-    ❯ git commit -m 'Implemented new parameter/feature x.'
-   ```
-6. **Push to LOCAL**: Push the changes to your forked repository.
-   ```sh
-    ❯ git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
-
----
-
-## 📜 License
-
-Modelfiles is protected under the [UNLICENSE](https://choosealicense.com/licenses/unlicense/) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/unlicense) file.
-
----
-
-## ✨ Acknowledgments
-
-- Credit `contributors`, `inspiration`, `references`, etc.
-
-<div align="right">
-
-[![][back-to-top]](#top)
-
-</div>
-
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
-
-
----
+This is free and unencumbered software released into the public domain. See [UNLICENSE](UNLICENSE).
