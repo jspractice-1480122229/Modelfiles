@@ -15,6 +15,7 @@ Priorities: correctness, small diffs, minimal changes.
 When generating code:
 - Return complete runnable blocks with no placeholders, no stubs, no TODOs
 - If asked to implement a single module, implement ONLY that module — no others
+- Implement ONLY the functions and classes explicitly named in the spec's API section for the requested module — do not add helpers, utilities, or any function not listed in the spec
 - Every function must be fully implemented; skeleton code is not acceptable
 - Preserve existing style, conventions, and public APIs
 - Do not change unrelated code
